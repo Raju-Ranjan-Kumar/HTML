@@ -1,0 +1,29 @@
+#first{
+    text-align: center;
+    color: red;
+    text-decoration: underline;
+}
+h1:hover{
+    color: blueviolet;
+}
+#second{
+    text-align: center;
+    color: blue;
+    font-weight: bold;
+    font-size: 40px;
+}
+#third{
+    width: 350px;
+    padding: 20px;
+    margin: 20px auto ;
+    text-align: center;
+    background-color: wheat;
+    color: green;
+}
+#fourth{
+    background-color: green;
+    /* color: red; */
+}
+#fifth{
+    background-color: red;
+}

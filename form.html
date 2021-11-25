@@ -1,0 +1,90 @@
+<html>
+    <head>
+        <title> Html form </title>
+        <style type="text/css">
+         LEgend{
+             font-size: 20px;
+         }
+         h2{ 
+            font-size: 40px;}
+         div{ 
+          float: right;
+          width:270px;
+          height: 390px;
+          border:5px solid blueviolet;
+          background-color:wheat;
+          text-align: center;
+          font-style: italic;
+          color: darkgreen;
+          }
+        </style>
+    </head>
+    <body bgcolor="violet">
+        <center> <h2 style="color:greenyellow;"><b><u>STUDENTS DETAILS</u></b></h2></center>
+           
+        <form>
+            <fieldset style="background-color: lightblue;">
+                <LEgend style="color:blue;"><b> Enter your details </b></LEgend>
+                <div><marquee direction="up"><p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maiores, sapiente! ipsum dolor sit amet consectetur, adipisicing elit. Reprehenderit, vitae.
+                   ipsum dolor sit amet consectetur adipisicing elit. Quas, ipsa! ipsum dolor sit amet consectetur, adipisicing elit.
+                    Labore fugit consequatur voluptatum expedita. Facere nulla voluptate, aut qui consequatur ipsa vel sequi ullam tempore reprehenderit impedit,
+                     velit ut alias officia voluptatem amet temporibus, voluptas asperiores. Aspernatur commodi ratione repellat ab!</p></marquee></div>
+                  First Name: &nbsp;
+                    <input type="text" name="first name"> <br><br>
+                  Midd Name: &nbsp;
+                    <input type="text" name="middle name"> <br><br>
+                  Last Name: &nbsp;
+                    <input type="text" name="last name" ><br> <br> 
+                  Age:  &nbsp;
+                    <input type="radio" name="age" >under 18
+                      <input type="radio" name="age" checked >over 18 <br><br>
+                  Course:  &nbsp;
+                    <select name="qualification">
+                     <option value="bca"> BCA </option>
+                     <option value="mca"> MCA </option>
+                     <option value="bba"> BBA </option>
+                     <option value="mba"> MBA </option>
+                     <option value="b.sc"> B.Sc </option>
+                     <option value="m.sc"> M.Sc </option>
+                     <option value="ba"> BA </option>
+                     <option value="ma"> MA </option>
+                     <option value="bcom"> B.Com </option>
+                     <option value="m.com"> M.Com </option>
+                  </select> <br><br>
+                 
+                  password: &nbsp;
+                   <input type="password" name="password" > <br><br>
+
+                  Favourite Game: &nbsp;
+                   <input type="checkbox" name="insert" value="cricket" > Cricket &nbsp;
+                   <input type="checkbox" name="insert" value="football" > football &nbsp;
+                   <input type="checkbox" name="insert" value="hocky" > hocky &nbsp;
+                   <input type="checkbox" name="insert" value="badminton" > Badminton &nbsp;
+                   <input type="checkbox" name="insert" value="ludo" > ludo &nbsp;
+                   <input type="checkbox" name="insert" value="game" > video game <br> <br>
+
+                 <abbr title="Date of birth"> DOB: &nbsp;</abbr>
+                    <input type="date" name="dob" > <br><br>
+                  Enail: &nbsp;
+                    <input type="email" name="mail" > <br><br>
+                  Exam Date:  &nbsp;
+                    <input type="date" name="exam date" > <br><br>
+                 <abbr title="telephone number"> Tel: &nbsp;</abbr>
+                    <input type="tel" name="tel no" > <br><br>
+                  File: &nbsp;
+                    <input type="file" name="choose file" > <br><br>
+                 <abbr title="Mobile number"> Mo: &nbsp;</abbr>
+                    <input type="number" name="mo.no" min="1" max="10" > <br><br>
+                  Rating: &nbsp;
+                   <input type="range" name="rating" min="1" max="10" > <br><br>
+
+                  <p>Write a few message about yourself in the text-box:</p> 
+                      <textarea name="user message" rows="10" col="10"></textarea><br><br>
+
+                <input type="reset">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <input type="submit" value="Submit">
+
+            </fieldset>
+        </form>
+    </body>
+</html>
