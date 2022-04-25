@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tip calculator</title>
+    <link rel="stylesheet" type="text/css" href="Tipstyle.css">
+
+</head>
+<body>
+    <div id="container">
+        <h1>Tip Calculator</h1>
+        <div id="calculator ">
+            <form>
+                <p>How much was your bill ?</p>
+                <p>Rs. <input id="billamt " type="text" placeholder="Bill Amount"></p>
+                <p>How was your service ?</p>
+                <p>
+                    <select id="servicequal ">
+                        <option disabled selected value="0">-- Choose an option --</option>
+                        <option value="15">15 &#37; &#45; Outstanding</option>
+                        <option value="10">10 &#37; &#45; Good</option>
+                        <option value="5">5 &#37; &#45; It was ok</option>
+                    </select>
+                </p>
+            </form>
+            <p>How many people are sharing the bill ?</p>
+            <p> <input id="peopleamt " type="text" placeholder="Number of people">People</p>
+            <button type="button" id="calculate " >Calculate !</button>
+        </div>
+        <!--Calculator end-->
+        <div id="totaltip ">
+            <sup>Rs.</sup> <span  id="tip">0.00</span> 
+            <small id="each">Each</small>
+        </div><br> 
+        <!--Totaltip end-->
+        <p>Hello everyone, I am <strong> Raju Ranjan</strong> this Tip calculator is created by me. </p>
+    </div>
+    <!--Container end-->
+    <script type="text/javascript" src="Tipscript.js"></script>
+  </body>
+</html>

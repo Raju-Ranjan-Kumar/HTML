@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Number to Word</title>
+</head>
+<body>
+    <h1>Number to word conveter </h1>
+    <div>
+        <p class="First"> Enter the number: <input id="Integer" type="text"> </p>
+        <button type="button" id="submit" >Click Here !</button><br>
+        <section id="section"> </section>
+    </div>
+        
+
+    <script type="text/javascript">
+        function valueInWords(value) {
+            let ones = ['', 'One', 'two', 'three', 'four','five', 'six', 'seven', 'eight', 'nine','ten', 'eleven', 'twelve',
+               'thirteen', 'fourteen','fifteen', 'sixteen', 'seventeen', 'eighteen', 'nineteen'];   
+            let tens = ['twenty','thirty', 'forty','fifty', 'sixty', 'seventy', 'eighty', 'ninety'];
+            let digit = 0;   
+            if (value < 20) return ones[value];   
+            if (value < 100) {     
+                digit = value % 10;    
+                return tens[Math.floor(value/10)-2] + " " + (digit > 0 ? ones[digit] : "");   
+            }
+            if (value < 1000) {    
+                return ones[Math.floor(value/100)] + " hundred " + (value % 100 > 0 ? valueInWords(value % 100) : "");   
+            }   
+            if (value < 100000) {     
+                return valueInWords(Math.floor(value/1000)) + " thousand " + (value % 1000 > 0 ? valueInWords(value % 1000) : "");   
+            }   
+            if (value < 10000000) {     
+                return valueInWords(Math.floor(value/100000)) + " lakh " + (value % 100000 > 0 ? valueInWords(value % 100000) : "");   
+            }   
+            return valueInWords(Math.floor(value/10000000)) + " crore " + (value % 10000000 > 0 ? valueInWords(value % 10000000) : ""); 
+        }
+
+        function check() {
+            let num =document.getElementById("Integer").value;
+            let box=document.createElement('div')
+            box.innerHTML=valueInWords(num);
+            document.getElementById('section').appendChild(box);
+        }
+
+        document.getElementById("submit").addEventListener("click",check)
+    </script>
+</body>
+</html>

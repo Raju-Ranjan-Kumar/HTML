@@ -1,0 +1,54 @@
+
+body{
+    background-color: burlywood;
+    padding: 0;
+    margin:0;
+   
+}
+#bg{
+    background-color: rgb(201, 13, 107);
+}
+.main{
+   
+    justify-content: center;
+    align-content: space-around;
+    display: flex;
+}
+ h1{
+    text-align: center;
+    font-size: 80px;
+    font-family: cursive;
+}
+.cal{
+    box-sizing: border-box;
+    width: 500px;
+    background-color: black;
+    color: blanchedalmond;
+}
+.screen{
+    font-size: 4em;
+    font-family: cursive;
+    text-align: right;
+    padding:10px 5px;
+}
+
+.cal-button{
+    background-color: yellowgreen;
+    color: black;
+    font-size: 1.8em;
+    cursor: pointer;
+    /* border: none; */
+    height: 83px;
+    width:100%; 
+  
+}
+.cal-row{
+    display: flex;
+    align-content: stretch;
+    justify-content: space-between;
+    margin-bottom: 0.5%;
+}
+.double{
+    width:214%;
+}
+ 

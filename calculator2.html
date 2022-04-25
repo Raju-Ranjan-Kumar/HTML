@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <style>
+        #container{width:280px; background:#8b6aef; border: solid black 2px; border-radius:8px; margin: auto;}
+        .title{border-radius:10px; margin-bottom:10px; margin-top:7px; text-align:center; width:280px; height:33px; color:black; border-bottom:2px solid black; font-weight: bold; font-size: 18px;}
+        input[type="button"]{border-radius: 10px;background-color:#ff4456;color: black;border-color:#ff4456 ;width:63px; height: 50px; font-size:20px;}
+        input[type="text"]{border-radius:10px; text-align:right; background-color:white; border-color:black; width:55px; height:32px; margin:auto;}
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div class = title >CodeAegis JavaScript Calculator</div>
+        <table border="1">
+            <tr>
+                <td><input type="button" value="AC" onclick="clr()"/> </td>    <!-- clr() function will call to clear all value -->
+                <td colspan="2"><input type="text" id="edu" style="width:125px;"/></td>
+                <td><input type="text" id="res"/></td>
+            </tr>
+            <tr>
+                <!-- creating buttons and assigning values-->
+                <td><input type="button" value="+" onclick="dis('+')"/> </td>
+                <td><input type="button" value="1" onclick="dis('1')"/> </td>
+                <td><input type="button" value="2" onclick="dis('2')"/> </td>
+                <td><input type="button" value="3" onclick="dis('3')"/> </td>
+            </tr>
+            <tr>
+                <td><input type="button" value="-" onclick="dis('-')"/> </td>
+                <td><input type="button" value="4" onclick="dis('4')"/> </td>
+                <td><input type="button" value="5" onclick="dis('5')"/> </td>
+                <td><input type="button" value="6" onclick="dis('6')"/> </td>
+            </tr>
+            <tr>
+                <td><input type="button" value="*" onclick="dis('*')"/> </td>
+                <td><input type="button" value="7" onclick="dis('7')"/> </td>
+                <td><input type="button" value="8" onclick="dis('8')"/> </td>
+                <td><input type="button" value="9" onclick="dis('9')"/> </td>
+            </tr>
+            <tr>
+                <td><input type="button" value="÷" onclick="dis('/')"/> </td>
+                <td><input type="button" value="." onclick="dis('.')"/> </td>
+                <td><input type="button" value="0" onclick="dis('0')"/> </td>
+                <!-- Evaluating function call eval()-->
+                <td><input type="button" value="=" onclick="solve()"/> </td>
+            </tr>
+        </table>
+    </div>
+    <script>
+        //function for displaying values
+        function dis(val) {
+           document.getElementById("edu").value+=val
+        }
+        //function for evaluation
+        function solve(){
+            let x = document.getElementById("edu").value
+            let y = eval(x)
+            document.getElementById("res").value = y
+        }
+        //function for clearing the display
+        function clr() {
+           document.getElementById("edu").value = ""
+           document.getElementById("res").value = ""
+        }
+    </script>
+</body>
+</html>
